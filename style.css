@@ -1,0 +1,152 @@
+/*   Background   */
+body, html {
+	height:100%;
+	background: radial-gradient(#72afe6, #1c579b);
+	font-family:Comic Sans MS;
+}
+/*   Background end   */
+/*   Hide bitton   */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/*   Hide bitton   */
+input, select {
+	background-color:#f9f9f9;
+}
+input[type=submit] {
+	margin:10px;
+	padding:10px;
+	background-color:#1c579b;
+	color:white;
+	cursor:pointer;
+}
+input:hover[type=submit] {
+	opacity:0.8;
+}
+b {
+	font-size:20px;
+}
+p {
+	margin:0;
+}
+h1 {
+	color:white;
+	text-align: center;
+}
+h1 span {
+	color:black;
+}
+.main {
+	background:url(bg.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	border:2px solid #333;
+	border-radius:15px;
+	overflow:hidden;
+	margin:auto;
+	width:70%;
+	background-color:#fff;
+	padding:20px;
+	box-sizing:border-box;
+}
+.duration {
+	overflow:hidden;
+	box-sizing:border-box;
+}
+.in {
+	padding-right: 50px;
+	float:left;
+}
+input, select, option {
+	padding: 5px 20px;
+	box-sizing: border-box;
+	border: 1px solid #aaa;
+	border-radius:5px;
+}
+select:hover {
+	border-color: #888;
+}
+.select {
+	margin-left:100px;
+}
+.details {
+	box-sizing:border-box;
+	width:100%;
+}
+.details table {
+	text-align:center;
+	width:100%;
+	table-layout:auto;
+	border-collapse:collapse;
+}
+.details th, td {
+	padding:3px;
+	width:100%;
+}
+.customer {
+	width:25%;
+	float:left;
+}
+.details input, .details select {
+	width:90%;
+}
+.final {
+	text-align:center;
+}
+a:link {
+	text-decoration:none;
+	color:blue;
+}
+a:hover {
+	color:red;
+}
+.star {
+	color:red;
+}
+.tooltip {
+  position: relative;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/*   Responsive   */
+@media screen and (max-width:1025px)
+{
+	.customer {
+		width:100%;
+	}
+	.main {
+		width:100%;
+		margin:0;
+	}
+}

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hotel Management System</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h1>Welcome <span>to Hotel</span></h1>
+<form action="">
+<div class="main">
+	<div class="duration">
+    	<div class="in">
+        	<label><b>Check In</b></label><br>
+        	<label>Date and Time:</label>
+        	<input type="datetime-local" required>
+    	</div>
+    	<div class="in">
+        	<label><b>Check Out</b></label><br>
+        	<label>Date and Time:</label>
+        	<input type="datetime-local" required>
+  	    </div>
+     </div>
+     <br>
+     <div class="type">
+     	<label><b>Type of room: </b></label>
+        <select>
+        	<option selected disabled hidden>--Select--</option>
+            <option>Single</option>
+            <option>Double</option>
+            <option>Family</option>
+            <option>Suit</option>
+        </select>
+     </div>
+     <br>
+     <div class="priv">
+     	<p><b>Select your Privileges: </b></p>
+        <div class="select">
+        	<input type="checkbox">
+            <label>Parking</label><br>
+            <input type="checkbox">
+            <label>Food Service</label><br>
+            <input type="checkbox">
+            <label>Internet connection</label><br>
+            <input type="checkbox">
+            <label>Cold/Hot Water Supply</label><br>
+            <input type="checkbox">
+            <label>Room Service</label><br>
+            <input type="checkbox">
+            <label>Television</label><br>
+            <input type="checkbox">
+            <label>Swimming Pool</label><br>
+            <input type="checkbox">
+            <label>Gym</label><br>
+        </div>
+     </div>
+     <br>
+     <div class="details">
+     	<p><b>Customer Details:</b></p>
+        <div class="customer" id="customer">
+        	<table>
+            	<thead>
+                	<tr>
+                    	<th>Customer 1<span class="star">*</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                	<tr>
+                    	<th><input type="text" placeholder="Full Name" required></th>
+                    </tr>
+                    <tr>
+                    	<th><select required><option disabled selected hidden>--Gender--</option><option>Male</option><option>Female</option><option>Others</option></select></th>
+                    </tr>
+                    <tr>
+                    	<th><input type="text" placeholder="DOB" onfocus="(this.type='date')" required></th>
+                    </tr>
+                    <tr>
+                    	<th><input type="number" placeholder="Mobile No." required></th>
+                    </tr>
+                    <tr>
+                    	<th><input type="email" placeholder="Email Id" required></th>
+                    </tr>
+                    <tr>
+                    	<th><select required><option selected disabled hidden>--Type of Id--</option><option>Aadhar Card</option><option>PAN Card</option><option>Voter Id</option><option>Others</option></select></th>
+                    </tr>
+                    <tr>
+                    	<th><input type="number" placeholder="Id No." required></th>
+                    </tr>
+                    <tr>
+                    	<th class="tooltip"><span class="tooltiptext">Upload Id</span><input type="file" required></th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="customer" id="customer">
+        	<table>
+            	<thead>
+                	<tr>
+                    	<th>Customer 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                	<tr>
+                    	<th><input type="text" placeholder="Full Name"></th>
+                    </tr>
+                    <tr>
+                    	<th><select><option disabled selected hidden>--Gender--</option><option>Male</option><option>Female</option><option>Others</option></select></th>
+                    </tr>
+                    <tr>
+                    	<th><input type="text" placeholder="DOB" onfocus="(this.type='date')"></th>
+                    </tr>
+                    <tr>
+                    	<th><input type="number" placeholder="Mobile No."></th>
+                    </tr>
+                    <tr>
+                    	<th><input type="email" placeholder="Email Id"></th>
+                    </tr>
+                    <tr>
+                    	<th><select><option selected disabled hidden>--Type of Id--</option><option>Aadhar Card</option><option>PAN Card</option><option>Voter Id</option><option>Others</option></select></th>
+                    </tr>
+                    <tr>
+                    	<th><input type="number" placeholder="Id No."></th>
+                    </tr>
+                    <tr>
+                    	<th class="tooltip"><span class="tooltiptext">Upload Id</span><input type="file"></th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="customer" id="customer">
+        	<table>
+            	<thead>
+                	<tr>
+                    	<th>Customer 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                	<tr>
+                    	<th><input type="text" placeholder="Full Name"></th>
+                    </tr>
+                    <tr>
+                    	<th><select><option disabled selected hidden>--Gender--</option><option>Male</option><option>Female</option><option>Others</option></select></th>
+                    </tr>
+                    <tr>
+                    	<th><input type="text" placeholder="DOB" onfocus="(this.type='date')"></th>
+                    </tr>
+                    <tr>
+                    	<th><input type="number" placeholder="Mobile No."></th>
+                    </tr>
+                    <tr>
+                    	<th><input type="email" placeholder="Email Id"></th>
+                    </tr>
+                    <tr>
+                    	<th><select><option selected disabled hidden>--Type of Id--</option><option>Aadhar Card</option><option>PAN Card</option><option>Voter Id</option><option>Others</option></select></th>
+                    </tr>
+                    <tr>
+                    	<th><input type="number" placeholder="Id No."></th>
+                    </tr>
+                    <tr>
+                    	<th class="tooltip"><span class="tooltiptext">Upload Id</span><input type="file"></th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="customer" id="customer">
+        	<table>
+            	<thead>
+                	<tr>
+                    	<th>Customer 4</th>
+                    </tr>
+                </thead>
+                <tbody>
+                	<tr>
+                    	<th><input type="text" placeholder="Full Name"></th>
+                    </tr>
+                    <tr>
+                    	<th><select><option disabled selected hidden>--Gender--</option><option>Male</option><option>Female</option><option>Others</option></select></th>
+                    </tr>
+                    <tr>
+                    	<th><input type="text" placeholder="DOB" onfocus="(this.type='date')"></th>
+                    </tr>
+                    <tr>
+                    	<th><input type="number" placeholder="Mobile No."></th>
+                    </tr>
+                    <tr>
+                    	<th><input type="email" placeholder="Email Id"></th>
+                    </tr>
+                    <tr>
+                    	<th><select><option selected disabled hidden>--Type of Id--</option><option>Aadhar Card</option><option>PAN Card</option><option>Voter Id</option><option>Others</option></select></th>
+                    </tr>
+                    <tr>
+                    	<th><input type="number" placeholder="Id No."></th>
+                    </tr>
+                    <tr>
+                    	<th class="tooltip"><span class="tooltiptext">Upload Id</span><input type="file"></th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+     </div>
+     <div class="final">
+     	<input type="checkbox" required>
+        <label>I accept the <a href="">Terms & Conditions</a></label><br>
+        <input type="submit" value="Check In">
+     </div>
+</div>
+</form>
+</body>
+</html>
